@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #242742;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 928px;
+  height: 641px;
+  background-color: #ffffff;
+  border-radius: 36px;
+  display: flex;
+}
+
+.content {
+  width: 376px;
+  height: 446px;
+  margin-left: 64px;
+  margin-top: 97px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1,
+.content > p {
+  margin-bottom: 24px;
+  color: #242742;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.content > p {
+  color: #242742;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.list-item {
+  display: flex;
+}
+
+.list-item .icon {
+  padding-right: 16px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  position: relative;
+}
+
+.form h5 {
+  color: #242742;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.form input {
+  width: 376px;
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  padding-left: 24px;
+  color: #242742;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.form button {
+  width: 376px;
+  height: 56px;
+  margin-top: 24px;
+  border-radius: 8px;
+  background: #242742;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  font-style: normal;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.box-image {
+  width: 400px;
+  height: 593px;
+  background-image: url(images/image.svg);
+  background-size: cover;
+  margin-top: 24px;
+  margin-left: 64px;
+}
+
+.thank-you-card {
+  background-color: #ffffff;
+  width: 504px;
+  height: 520px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+}
+
+.thank-you-card .icon {
+  margin-left: 64px;
+  width: 376px;
+  margin-bottom: 40px;
+}
+
+.thank-you-card h3 {
+  color: #242742;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-left: 64px;
+  margin-bottom: 25px;
+}
+
+.thank-you-card p {
+  color: #242742;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-bottom: 40px;
+}
+
+.thank-you-card p a {
+  color: #242742;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.thank-you-card button {
+  width: 376px;
+  height: 56px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #242742;
+  border: none;
+  outline: none;
+  margin-left: 64px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.thank-you-card .icon {
+  margin-top: 48px;
+}
+
+/*active state*/
+.form input,
+.form button:hover,
+.thank-you-card button:hover {
+  cursor: pointer;
+}
+
+.form input:focus {
+  outline-color: #242742;
+}
+
+.form button:hover,
+.thank-you-card button:hover {
+  border-radius: 8px;
+  background: var(
+    --gradient-1,
+    linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%)
+  );
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+.form .wrong-email {
+  border-radius: 8px;
+  border: 1px solid var(--vermellion, #ff6155);
+  background: rgba(255, 97, 85, 0.15);
+  color: #ff6155;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  outline: #ff6155;
+}
+
+.form .wrong-text {
+  color: #ff6155;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*MOBILE*/
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 375px;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .box-image {
+    background-image: url(images/Mask\ group.svg);
+    background-position: cover;
+    width: 100%;
+    height: 284px;
+    margin: 0;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 327px;
+    margin: auto;
+    height: auto;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .content h5 {
+    font-size: 12px;
+  }
+
+  .text p {
+    margin-bottom: 10px;
+  }
+
+  .form input,
+  .form button {
+    width: 327px;
+  }
+
+  .form button {
+    margin-bottom: 40px;
+  }
+
+  /*thank yoou window*/
+  .thank-you-card{
+    display: none;
+    width: 375px;
+    height: 100vh;
+    border-radius: 0;
+  }
+  
+
+  .thank-you-card .icon {
+    margin: auto;
+    margin-top: 149px;
+    width: 327px;
+    margin-bottom: 0;
+   
+  }
+
+  .thank-you-card h3 {
+    font-size: 40px;
+    width: 327px;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+
+  .thank-you-card p{
+    margin: auto;
+    font-size: 16px;
+    width: 327px;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .thank-you-card button{
+    margin: auto;
+    width: 327px;
+    margin-top: 263px;
+  }
+}
