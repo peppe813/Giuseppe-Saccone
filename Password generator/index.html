@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+    <div class="container">
+        <input type="password" placeholder="Inserisci Password">
+        <h3>La password deve contenere</h3>
+
+        <div class="should-be">
+            <div class="icon icon-lenght"></div>
+            <p class="p-lenght">Almeno 8 caratteri</p>
+        </div>
+
+        <div class="should-be">
+            <div class="icon icon-number"></div>
+            <p class="p-number">Almeno 1 numero</p>
+        </div>
+
+        <div class="should-be">
+            <div class="icon icon-lowercase"></div>
+            <p class="p-lower">Almeno 1 lettera minuscola</p>
+        </div>
+
+        <div class="should-be">
+            <div class="icon icon-symbol"></div>
+            <p class="p-symbol">Almeno 1 carattere speciale</p>
+        </div>
+
+        <div class="should-be">
+            <div class="icon icon-uppercase"></div>
+            <p class="p-upper">Almeno 1 lettera maiuscola</p>
+        </div>
+
+        <p class="s-h">mostra</p>
+
+        <p class="or">oppure</p>
+        <button id="genera-psw">Genera Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
