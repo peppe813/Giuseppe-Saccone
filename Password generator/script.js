@@ -114,10 +114,6 @@ function generaPassword() {
 };
 
 
-let string = 'ciao'
-
-  console.log(string.charAt(3))
-
 
 
 
