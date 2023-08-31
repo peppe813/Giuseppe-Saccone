@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meteo 2s</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="warning">
+     <h1>This project uses a free API and may not work properly</h1>
+    </div>
+
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Inserisci città">
+            <button>Cerca</button>
+            </button>
+        </div>
+        <div class="container-result">
+        <ul class="result"></ul>
+    </div>
+
+        <div class="main-weather">
+            <p class="luogo"></p>
+            <p class="temperatura"><span></span></p>
+            <p class="cielo"></p>
+            <img src="" alt="icona meteo">
+        </div>
+        
+        <div class="sun-container">
+            <div class="sunrise">
+                <img src="icons8-sole-66.png" class="icon-sunrise"></img>
+                <p class="hour-sunrise"></p>
+            </div>
+            <div class="sunset">
+                <img src="icons8-nuova-luna-96.png" class="icon-sunset"></img>
+                <p class="hour-sunset"></p>
+            </div>
+        </div>
+
+        <p>Prossimi 2 giorni</p>
+
+        <div class="forecast-container">
+            <p class="giorno"></p>
+            <img src="" alt="" class="icon-forecast">
+            <p class="minima"></p>
+            <p class="massima"></p>
+        </div>
+        <hr>
+
+        <div class="forecast-container">
+            <p class="giorno"></p>
+            <img src="" alt="" class="icon-forecast">
+            <p class="minima"></p>
+            <p class="massima"></p>
+        </div>
+        <hr>
+
+        <!-- <div class="forecast-container">
+            <p class="giorno"></p>
+            <img src="" alt="" class="icon-forecast">
+            <p class="minima"></p>
+            <p class="massima"></p>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
